@@ -1,6 +1,7 @@
 /*
 GLOBAL SETTING
 */
+
 html,
 body,
 h1,
@@ -11,144 +12,198 @@ h5,
 li,
 a,
 p {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    color: #008000
+  font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+  color: #008000
 }
+
 h1 {
-    margin-top:15%;
+  margin-top: 15%;
 }
-html, body {
-    background-color: #000000;
-    }
+
+html,
+body {
+  background-color: #000000;
+}
 
 button {
-    margin: 20px;
-    border-radius: 5px;
+  margin: 20px;
+  border-radius: 5px;
 }
+
 ul li a span {
-    margin: 5px;
+  margin: 5px;
 }
+
 form label {
-    text-align: right;
-  }
+  text-align: right;
+}
+
+
 /*
 GLYPHICON SETTING
 */
+
 .glyphicon {
-    font-size: 1.3em;
-    text-shadow: 2px 2px black;
+  font-size: 1.3em;
+  text-shadow: 2px 2px black;
 }
+
 
 /*
 MAIN MENU 
 */
- .navbar {
-    background: linear-gradient(45deg, blue, red) ;
+
+.navbar {
+  background: linear-gradient(45deg, blue, red);
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  top: 0;
 }
+
 .navbar-toggle {
-    border-color: #008000;
+  border-color: #008000;
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #008000;
+  background-color: #008000;
 }
 
 .navbar-light .navbar-nav>li>a:hover,
 .navbar-light .navbar-nav>li>a:focus,
 .nav.navbar-nav.navbar-right>li>a:focus {
-    background: #008000;
-    color: black;
-    border-radius: 50px;
+  background: #008000;
+  color: black;
+  border-radius: 50px;
 }
+
+
 /*
 SECOND MENU
 */
+
 .menu_section ul li {
-    padding: 1px;
+  top: 10px;
 }
+
+
 /*
 BUTTON LINK CONNECTION MAIN PAGE
 */
+
 .direct {
   position: relative;
-  z-index: 5}
+  z-index: 5
+}
+
+
 /*
 VIEWS SETTING
 */
-  .pages {
-    margin-top: 10px;
-  }
+
+.pages {
+  margin-top: 150px;
+}
+
 
 /*
 CAROUSEL
 */
+
 .hide-bullets {
-    list-style:none;
-    margin-left: -40px;
-    margin-top:20px;
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 20px;
 }
 
 .thumbnail {
-    padding: 0;
+  padding: 0;
 }
 
-.carousel-inner>.item>img, .carousel-inner>.item>a>img {
-    width: 100%;
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  width: 100%;
 }
+
 
 /*
 ANIMATION FALLINGS STARS
 */
 
-#layout { 
-  color:#FFF; height:600px; width:100%; height:100%; 
+#layout {
+  color: #FFF;
+  width: 100%;
+  height: 100%;
 }
+
 .stars {
-  z-index: 0; position: absolute;
-  background-image: url(   http://www.14denoviembre.es/img/hori.png ), url( http://www.14denoviembre.es/img/stars_5.png );
-  background-repeat: repeat-x,repeat-x repeat-y;
-  transform:translate3D(0em, 0em, 0);
+  z-index: 0;
+  position: absolute;
+  background-image: url(http://www.14denoviembre.es/img/hori.png ), url(http://www.14denoviembre.es/img/stars_5.png );
+  background-repeat: repeat-x, repeat-x repeat-y;
+  transform: translate3D(0em, 0em, 0);
   transform-style: preserve-3d;
 }
+
+
 /*
 ANImation clouds
 */
+
 @keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
+
 @-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
+
 @-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
+
 @-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 
 .clouds {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.clouds{
-    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-    z-index:3;
-
-  -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
-  -o-animation:move-clouds-back 200s linear infinite;
-  -webkit-animation:move-clouds-back 200s linear infinite;
-  animation:move-clouds-back 200s linear infinite;
+.clouds {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
 }
-

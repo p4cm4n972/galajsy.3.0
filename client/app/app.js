@@ -29,11 +29,12 @@ import about from './about/about.component';
 import news from './news/news.component';
 import articles from './articles/articles.component';
 import members from './members/members.component';
+import games from './games/games.component';
 
 import './app.css';
 
 angular.module('galajsy60App', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', ngRoute,
-  _Auth, account, admin, 'validation.match', navbar, footer, main, constants, socket, util, contact, about, news, articles, members
+  _Auth, account, admin, 'validation.match', navbar, footer, main, constants, socket, util, contact, about, news, articles, members, games
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
