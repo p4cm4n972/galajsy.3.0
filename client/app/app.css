@@ -46,8 +46,11 @@
 /* inject:css */
 @import 'about/about.css';
 @import 'admin/admin.css';
+@import 'articles/articles.css';
 @import 'contact/contact.css';
 @import 'main/main.css';
+@import 'members/members.css';
+@import 'news/news.css';
 @import '../components/footer/footer.css';
 @import '../components/oauth-buttons/oauth-buttons.css';
 /* endinject */

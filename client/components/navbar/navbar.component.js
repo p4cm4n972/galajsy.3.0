@@ -7,19 +7,19 @@ export class NavbarComponent {
   menu = [{
       title: 'Home',
       link: '/',
-      gly:"glyphicon glyphicon-home"
+      gly: "glyphicon glyphicon-home"
     },
     {
       title: 'Contact',
       link: '/contact',
-      gly:"glyphicon glyphicon-send"
-      
+      gly: "glyphicon glyphicon-send"
+
     },
     {
-      title:'About',
-      link:'/about',
-      gly:"glyphicon glyphicon-asterisk"
-      
+      title: 'About',
+      link: '/about',
+      gly: "glyphicon glyphicon-asterisk"
+
     }
   ];
 

@@ -1,3 +1,6 @@
+/*
+GLOBAL SETTING
+*/
 html,
 body,
 h1,
@@ -14,46 +17,34 @@ p {
 h1 {
     margin-top:15%;
 }
-.glyphicon {
-    font-size: 1.3em;
-    text-shadow: 2px 2px black;
-}
-
-
- .navbar {
-    background: linear-gradient(45deg, blue, red) ;
-}
-
-
-
 html, body {
     background-color: #000000;
-    overflow: hidden;
     }
 
 button {
     margin: 20px;
     border-radius: 5px;
 }
-/*.menu_section, .pages {
-    margin-top: 80px;
-}*/
-.menu_section ul li {
-    padding: 10px;
-}
 ul li a span {
     margin: 5px;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-}
-footer img {
-    margin: 10px;
+form label {
+    text-align: right;
+  }
+/*
+GLYPHICON SETTING
+*/
+.glyphicon {
+    font-size: 1.3em;
+    text-shadow: 2px 2px black;
 }
 
+/*
+MAIN MENU 
+*/
+ .navbar {
+    background: linear-gradient(45deg, blue, red) ;
+}
 .navbar-toggle {
     border-color: #008000;
 }
@@ -69,15 +60,25 @@ footer img {
     color: black;
     border-radius: 50px;
 }
-.TabsParentCtrl {
-    margin-top: 50px;
+/*
+SECOND MENU
+*/
+.menu_section ul li {
+    padding: 1px;
 }
-form.tab-form-demo .tab-pane {
-    margin: 20px 20px;
+/*
+BUTTON LINK CONNECTION MAIN PAGE
+*/
+.direct {
+  position: relative;
+  z-index: 5}
+/*
+VIEWS SETTING
+*/
+  .pages {
+    margin-top: 10px;
   }
-  form label {
-    text-align: right;
-  }
+
 /*
 CAROUSEL
 */
@@ -95,12 +96,6 @@ CAROUSEL
     width: 100%;
 }
 
-/*
-Members portfolio
-*/
-.portfolio-item {
-    margin-bottom: 25px;
-}
 /*
 ANIMATION FALLINGS STARS
 */
@@ -157,31 +152,3 @@ ANImation clouds
   animation:move-clouds-back 200s linear infinite;
 }
 
-
-/*.thing-form {
-  margin: 20px 0;
-}
-
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
-}
-
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
-}
-
-.navbar-text {
-  margin-left: 15px;
-}*/
