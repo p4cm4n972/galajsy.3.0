@@ -35,9 +35,9 @@ button {
     margin: 20px;
     border-radius: 5px;
 }
-.menu_section, .pages {
+/*.menu_section, .pages {
     margin-top: 80px;
-}
+}*/
 .menu_section ul li {
     padding: 10px;
 }
@@ -48,7 +48,6 @@ ul li a span {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
 }
 footer img {
@@ -75,6 +74,9 @@ footer img {
 }
 form.tab-form-demo .tab-pane {
     margin: 20px 20px;
+  }
+  form label {
+    text-align: right;
   }
 /*
 CAROUSEL

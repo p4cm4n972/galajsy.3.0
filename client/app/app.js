@@ -24,11 +24,13 @@ import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
+import contact from './contact/contact.component';
+import about from './about/about.component';
 
 import './app.css';
 
 angular.module('galajsy60App', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', ngRoute,
-  _Auth, account, admin, 'validation.match', navbar, footer, main, constants, socket, util
+  _Auth, account, admin, 'validation.match', navbar, footer, main, constants, socket, util, contact, about
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
