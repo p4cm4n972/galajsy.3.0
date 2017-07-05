@@ -7,9 +7,12 @@ export class MainController {
   newThing = '';
 
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor($http, $scope, socket, Auth) {
     this.$http = $http;
     this.socket = socket;
+    this.isLoggedIn = Auth.isLoggedInSync;
+    this.isAdmin = Auth.isAdminSync;
+    this.getCurrentUser = Auth.getCurrentUserSync;
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('thing');
@@ -38,10 +41,12 @@ export class MainController {
   }
 }
 
-export default angular.module('galajsy60App.main', [ngRoute])
+
+
+export default angular.module('galajsy60App.main', [ngRoute, ])
   .config(routing)
   .component('main', {
     template: require('./main.html'),
-    controller: MainController
+    controller: MainController,
   })
   .name;
