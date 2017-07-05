@@ -46,14 +46,14 @@ var all = {
   },
 
   facebook: {
-    clientID: process.env.FACEBOOK_ID || 'id',
-    clientSecret: process.env.FACEBOOK_SECRET || 'secret',
+    clientID: process.env.FACEBOOK_ID || '288860251564912',
+    clientSecret: process.env.FACEBOOK_SECRET || '6efb5cd8ce74993b286eac5bdc2f4c33',
     callbackURL: `${process.env.DOMAIN || ''}/auth/facebook/callback`
   },
 
   twitter: {
-    clientID: process.env.TWITTER_ID || 'id',
-    clientSecret: process.env.TWITTER_SECRET || 'secret',
+    clientID: process.env.TWITTER_ID || 'bETJ89puTYN418qTGFvyXseJN',
+    clientSecret: process.env.TWITTER_SECRET || 'mHe1cHOEnyDb2zwvMWW6scj7qlcdoAurWOUvdqgvk2nS01xZYS',
     callbackURL: `${process.env.DOMAIN || ''}/auth/twitter/callback`
   },
 
