@@ -7,7 +7,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/galajsy60-dev'
+    uri: 'mongodb://p4cm4n972:made81MA@ds111461.mlab.com:11461/proze'
   },
 
   // Seed database on startup

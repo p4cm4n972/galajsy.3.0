@@ -4,7 +4,12 @@ export default class SettingsController {
   user = {
     oldPassword: '',
     newPassword: '',
-    confirmPassword: ''
+    confirmPassword: '',
+    email:'',
+    name:'',
+    gender:'',
+    location:'',
+    website:'',
   };
   errors = {
     other: undefined

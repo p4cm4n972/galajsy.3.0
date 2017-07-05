@@ -12,11 +12,11 @@ import http from 'http';
 import seedDatabaseIfNeeded from './config/seed';
 
 // Connect to MongoDB
-/*mongoose.connect(config.mongo.uri, config.mongo.options);
+mongoose.connect(config.mongo.uri, config.mongo.options);
 mongoose.connection.on('error', function(err) {
   console.error(`MongoDB connection error: ${err}`);
   process.exit(-1); // eslint-disable-line no-process-exit
-});*/
+});
 
 // Setup server
 var app = express();

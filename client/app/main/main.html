@@ -1,8 +1,8 @@
 <div id="layout" class="stars">
   <div class="text-center">
   <h1 >Welcom to Galajsy Social network</h1>
-  <a role="button" href="/login" class="btn btn-success direct">login</a>
-  <a role="button" href="/signup" class="btn btn-primary direct">register</a>
+  <span ng-hide="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/login')}"><a  role="button" href="/login" class="btn btn-success direct">login</a></span>
+  <span ng-hide="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/signup')}"><a role="button" href="/signup" class="btn btn-primary direct">register</a></span>
   </div>
   <div id="ShootingStarParams"></div>
   <div class="clouds"></div>
