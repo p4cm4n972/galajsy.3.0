@@ -16,9 +16,7 @@ p {
   color: #008000
 }
 
-h1 {
-  margin-top: 15%;
-}
+
 
 html,
 body {
@@ -38,7 +36,12 @@ form label {
   text-align: right;
 }
 
-
+/*
+title welcom
+*/
+.welcom {
+  margin: 20%;
+}
 /*
 GLYPHICON SETTING
 */
@@ -199,7 +202,7 @@ ANImation clouds
 }
 
 .clouds {
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat-x top center;
   z-index: 3;
   -moz-animation: move-clouds-back 200s linear infinite;
   -ms-animation: move-clouds-back 200s linear infinite;

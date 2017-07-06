@@ -1,54 +1,21 @@
 <div class="container pages text-center">
-                <ul class="hide-bullets">
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-0">
-                            <img src="http://placehold.it/150x150&text=zero">
-                        </a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/150x150&text=5"></a>
-                    </li>
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
-                    </li>
-                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Latest Articles:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
+        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
+      </ul>
     </div>
+  </div>
+
+  <form class="thing-form">
+    <label>Syncs in realtime across clients</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Add a new article here." ng-model="$ctrl.newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
+      </span>
+    </p>
+  </form>
+</div>
