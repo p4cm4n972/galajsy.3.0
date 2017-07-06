@@ -58,8 +58,8 @@ var all = {
   },
 
   google: {
-    clientID: process.env.GOOGLE_ID || 'id',
-    clientSecret: process.env.GOOGLE_SECRET || 'secret',
+    clientID: process.env.GOOGLE_ID || '894644192995-qt7o1043n34e5anpipu8vsq04u8stg7a.apps.googleusercontent.com',
+    clientSecret: process.env.GOOGLE_SECRET || 'HTUTeH4w5dL0-j5IXgV1mt7X',
     callbackURL: `${process.env.DOMAIN || ''}/auth/google/callback`
   }
 };

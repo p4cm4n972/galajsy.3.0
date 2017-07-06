@@ -53,11 +53,12 @@ export default function(app) {
   app.use(session({
     secret: config.secrets.session,
     saveUninitialized: true,
-    resave: false,
-    store: new MongoStore({
+    //ISSUE = ERROR: FAILED TO FIND REQUEST TOKEN IN SESSION
+    resave: true /*false*/,
+    /*store: new MongoStore({
       mongooseConnection: mongoose.connection,
       db: 'galajsy60'
-    })
+    })*/
   }));
 
   /**
