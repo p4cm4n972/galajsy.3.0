@@ -8,18 +8,18 @@ export class MainController {
 
   /*@ngInject*/
   constructor($http, $scope, socket, Auth) {
-    this.$http = $http;
+   this.$http = $http;
     this.socket = socket;
     this.isLoggedIn = Auth.isLoggedInSync;
     this.isAdmin = Auth.isAdminSync;
     this.getCurrentUser = Auth.getCurrentUserSync;
 
-    /*$scope.$on('$destroy', function() {
+    $scope.$on('$destroy', function() {
       socket.unsyncUpdates('thing');
-    });*/
+    });
   }
 
-  /*$onInit() {
+  $onInit() {
     this.$http.get('/api/things')
       .then(response => {
         this.awesomeThings = response.data;
@@ -27,7 +27,7 @@ export class MainController {
       });
   }
 
-  addThing() {
+  /*addThing() {
     if(this.newThing) {
       this.$http.post('/api/things', {
         name: this.newThing
